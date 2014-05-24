@@ -4,11 +4,6 @@
 
 # To read raw data:
 
-setwd("./UCI HAR Dataset/")
-
-featureNames = read.table("features.txt", header=FALSE)
-activityLabels = read.table("activity_labels.txt", head=FALSE)
-
 setwd("./UCI HAR Dataset/train")
 
 trainX = read.csv("X_train.txt", header=FALSE, sep="")
@@ -20,6 +15,11 @@ setwd("./UCI HAR Dataset/test")
 testX = read.csv("X_test.txt", header=FALSE, sep="")
 testY = read.csv("y_test.txt", header=FALSE)
 testSubj = read.csv("subject_test.txt", header=FALSE)
+
+setwd("./UCI HAR Dataset/")
+
+featureNames = read.table("features.txt", header=FALSE)
+activityLabels = read.table("activity_labels.txt", head=FALSE)
 
 # To combine training and test data:
 
