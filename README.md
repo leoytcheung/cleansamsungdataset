@@ -16,3 +16,5 @@ Before running the script, you need to:
 	https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 2. unzip the downloaded file and save the folder "UCI HAR Dataset" and its files inside to the working directory of your R;
+
+The output of the scipt is a comma-delimited .txt file. The file will saved in the "UCI HAR Dataset" folder.
