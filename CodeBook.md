@@ -7,6 +7,7 @@ They are experimental data of human activities collected from the Samsung Galaxy
 
 ""The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.""
 
+
 - Variables -  
 
 The original dataset that contains accelerometer and gyroscope data has 561 variables. However, the dataset produced by the script in this repo will include 79 of these variables. The selection criterion is that the variable name contains either the character string "mean" or "std" (standard deviation). 
@@ -45,4 +46,4 @@ The variables of the cleaned dataset (a total of 82) are as follows:
 
 - Transformations involved -
 
-To produce the cleaned dataset, the script reads in the accelerator and gyroscope raw data from both the training and test datasets and form a data frame. The subject ID, dataset source (training or test) and activity type data are then combined with the above data frame. Afterwards, means of each accelerator and gyroscope variable from each subject ID and each activity type are calculated to produce the slimer, final dataset. 
+To produce the cleaned dataset, the script reads in the accelerometer and gyroscope raw data from both the training and test datasets and form a data frame. The subject ID, dataset source (training or test) and activity type data are then combined with the above data frame. Afterwards, means of each accelerator and gyroscope variable from each subject ID and each activity type are calculated to produce the slimer, final dataset. 
